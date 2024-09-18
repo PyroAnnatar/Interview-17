@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${mukta_init.variable} grid place-items-center h-screen `}
+        className={`${mukta_init.variable} grid place-items-center h-screen bg-zinc-900 `}
       >
         {children}
       </body>

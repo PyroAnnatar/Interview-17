@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 function App() {
   const unlockedScreen = () => (
-    <div style={{ textAlign: "center" }}>Login oldunuz.</div>
+    <div style={{ textAlign: "center" }} className="text-white">
+      Login oldunuz.
+    </div>
   );
 
   return (
@@ -35,8 +37,8 @@ const CombinationLock = ({ combination, NextScreen }) => {
       {combo && combo.join("") === combination.join("") ? (
         <NextScreen />
       ) : (
-        <section className="border-[1px] border-black p-8 bg-zinc-500 shadow-[0_0_12px_rgb(255,255,255,0.3)_inset] rounded-xl">
-          <div className="min-h-[60px] w-[275px] text-center text-5xl outline outline-[2px] outline-black bg-slate-100 shadow-[0_0_7px_rgb(255,255,0,0.3)_inset] mb-4">
+        <section className="border-[1px] border-black p-8 bg-zinc-700 shadow-[0_0_4px_rgb(255,255,255,0.3)_inset] rounded-xl">
+          <div className="min-h-[60px] pt-1 w-[275px] text-center text-5xl outline outline-[2px] outline-black bg-slate-100 shadow-[0_0_7px_rgb(255,255,0,0.3)_inset] mb-4">
             {combo}
           </div>
           <div className="grid grid-cols-3 gap-[2px] min-w-[275px] max-w-[275px] text-center text-5xl">
